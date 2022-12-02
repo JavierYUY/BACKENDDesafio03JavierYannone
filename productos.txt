@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Titulo1",
+    "price": 12345,
+    "thumbnail": "www.facebook.com",
+    "id": 1
+  },
+  {
+    "title": "Titulo2",
+    "price": 12345,
+    "thumbnail": "www.google.com",
+    "id": 2
+  },
+  {
+    "title": "Titulo3",
+    "price": 12345,
+    "thumbnail": "www.youtube.com",
+    "id": 3
+  }
+]
