@@ -47,20 +47,24 @@ class Contenedor{
         
         //let objs = [];
         try{
+            /*
             console.log('estoy leyendo')
             const objs = await fs.readFile("productos.txt", 'utf-8');
             console.log('dentrooooo');
             return JSON.parse(objs);
-            
+            */
             /*
-            return new Promise(res =>{
+            const obj = new Promise(res =>{
                 setTimeout(() =>{
                     const objs = fs.readFile("productos.txt", 'utf-8');
                     res(objs);
                 }, 3000)
-            })*/
+            })
 
-            /*
+            console.log(JSON.parse(obj));
+            return JSON.parse(obj);
+            */
+            
             const objs = await fs.readFile("productos.txt", 'utf-8', function(err, data){
                 if(err) console.log('Error en read ' + err);
 
@@ -69,7 +73,7 @@ class Contenedor{
                 //objs = JSON.parse(data);
                 return JSON.parse(data);
             });
-            */
+            
             /*
             fs.promises.readFile("productos.txt".toString())
                 .then(contenido => {

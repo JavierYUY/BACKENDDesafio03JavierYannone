@@ -15,6 +15,7 @@ const server = app.listen(PORT, () => {
 app.get('/productos', async (req, res) =>{
     const data = await contenedor.getAll();
     console.log(data);
+    console.log('fin del get');
 })
 
 /*
